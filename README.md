@@ -1,12 +1,12 @@
 ## Design and implement the backend APIs for an Event Booking System.
 
-DB - mongodb
-backend - express.js
+DB - mongodb,
+backend - express.js,
 ODM - mongoose
 
-==================================
+===================================
 Event Booking System - Walkthrough
-==================================
+===================================
 
 successfully implemented the backend for the Event Booking System.
 
