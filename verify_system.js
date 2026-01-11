@@ -72,7 +72,7 @@ async function runDemo() {
 
         console.log('\n--- 5. Updating Event (Triggers Background Task 2) ---');
         if (organizerToken && eventId) {
-            const updateRes = await axios.put(`${BASE_URL}/events/${eventId}`, {
+            const updateRes = await axios.patch(`${BASE_URL}/events/${eventId}`, {
                 title: 'Tech Conference 2025 - UPDATED',
                 description: 'Updated location details'
             }, {

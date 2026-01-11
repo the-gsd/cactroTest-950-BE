@@ -9,6 +9,6 @@ router.route('/')
 
 router.route('/:id')
     .get(getEventById)
-    .put(protect, authorize('organizer'), updateEvent);
+    .patch(protect, authorize('organizer'), updateEvent);
 
 module.exports = router;
