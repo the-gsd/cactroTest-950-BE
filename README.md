@@ -4,17 +4,15 @@ DB - mongodb,
 backend - express.js,
 ODM - mongoose
 
-Event Booking System - Walkthrough
+Event Booking System
 ==================================
-
-successfully implemented the backend for the Event Booking System.
 
 Features Implemented
 --------------------
 
 1.  **Authentication & Authorization**
     *   JWT-based authentication.        
-    *   Role-based access control (Admin/Organizer vs Customer).
+    *   Role-based access control (Organizer and Customer).
     *   endpoints: /api/auth/register, /api/auth/login.
         
 2.  **Event Management**
@@ -24,14 +22,14 @@ Features Implemented
         
 3.  **Booking System**
     *   Customers can book tickets.
-    *   Inventory management (tickets decrement).
+    *   available ticket count decremented.
     *   **Background Task**: Booking triggers a confirmation email simulation.
         
 4.  **Background Tasks**
     *   Implemented using better-queue (in-memory) for simplicity and reliability in this environment.
     *   Simulates Email Sending and Notifications with a 1-second delay.
 
-Verification Results
+Verification Script
 --------------------
 
 I created a script verify\_system.js that runs the full flow.
